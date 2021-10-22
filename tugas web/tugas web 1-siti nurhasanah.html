@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body bgcolor="darkgrey">
+    <div style="background-color: white;">
+        <table style="width: 1000px;">
+            <tr>
+                <td>Home |</td>
+                <td>Generate Link |</td>
+                <td>Transaction History |</td>
+                <td>Policy |</td>
+                <td>Logout</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <div style="display: flex; margin-left: 200px;">
+        <div>
+            <img src="images/icon1.jpg" alt="" style="width: 200px; height: 200px;">
+            <form action="upload.php" method="POST" enctype="multipart/from-data">
+                <input type="file" name="photo">
+            </form>
+        </div>
+        <div style="margin-left: 50px;">
+            <form action="upload.php" method="post">
+                <table style="height: 450px;">
+                    <tr>
+                        <td>Title here :</td>
+                        <td>
+                            <input type="text" style="width: 250px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Description :</td>
+                        <td>
+                            <textarea name="desc" id="desc" cols="35" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Account Number :</td>
+                        <td>
+                            <input type="text" style="width: 250px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="bank">Bank :</label></td>
+                        <td>
+                            <select name="bank" id="bank" style="width:150px">
+                                <option value="HSBC">HSBC</option>
+                                <option value="PERMATA">PERMATA</option>
+                                <option value="BNI">BNI</option>
+                                <option value="MANDIRI">MANDIRI</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Account Holder :</td>
+                        <td>
+                            <input type="text" style="width: 200px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Transaction :</td>
+                        <td>
+                            <input type="number" value="1" style="width: 30px;"><br>
+                            *if the transaction is for 3 person, choose 3 from the drop-down list <br>
+                            <input type="checkbox" name="send" id="send1" checked> Send to Mobile Phone <br>
+                            <input type="checkbox" name="send" id="send2"> Send to Email <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Send to Mobile Phone</td>
+                        <td>
+                            <input type="text" style="width: 200px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Send to Email</td>
+                        <td>
+                            <input type="text" style="width: 200px;">
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <input type="submit" value="Submit"
+                    style="width: 150px; color: white; background-color: green; margin-left: 167px; text-align: center;">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
